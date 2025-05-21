@@ -12,14 +12,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mansalva&family=Montserrat:wght@300;400;500;600;700&family=Palanquin:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
+  <!-- <style>
     body {
       font-family: 'Montserrat', sans-serif;
     }
-  </style>
+  </style> -->
 </head>
 <body>
-    <nav style="background-color: #02515A; height: 59px;" class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="top-navbar navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
           <span class="navbar-text text-white me-3">
@@ -41,7 +41,7 @@
             <a href="https://www.facebook.com/happymangotours" target="_blank" class="text-white mx-2"><i class="fa-brands fa-facebook"></i></a>
           </span>
           <span class="navbar-text">
-            <a href="https://api.whatsapp.com/send?phone=94777007707" target="_blank" class="btn text-white" style="background-color: #FF9933; border-radius: 0;">
+            <a href="https://api.whatsapp.com/send?phone=94777007707" target="_blank" class="btn text-white whatsapp-button">
               WhatsApp
             </a>
           </span>
@@ -49,12 +49,12 @@
       </div>
     </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white" style="height: 84px;">
+    <nav class="main-navbar navbar navbar-expand-lg navbar-light bg-white">
       <div class="container">
         <div class="d-flex align-items-center order-1">
           <ul class="navbar-nav flex-row">
             <li class="nav-item mx-2">
-              <a class="nav-link fw-bold" href="index.html">HOME</a>
+              <a class="nav-link fw-bold active" aria-current="page" href="index.html">HOME</a>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link fw-bold" href="about.html">ABOUT</a>
@@ -79,7 +79,7 @@
         </div>
         <div class="mx-auto order-1">
           <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <img src="logo.png" alt="Mango Tours Logo" style="height:48px;">
+            <img src="logo.png" alt="Mango Tours Logo" class="logo-img">
           </a>
         </div>
         
@@ -88,13 +88,13 @@
 
 
     <!-- Hero Section Start -->
-    <section class="hero-section" style="background-image: url(''); height: 900px; background-size: cover; background-position: center; position: relative;">
+    <section class="hero-section-custom">
       <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
-      <div class="" style="max-width: 600px;">
-        <h1 class="text-center fw-bold mb-2" style="color: #FFFFFF;">
+      <div class="">
+        <h1 class="text-center fw-bold mb-2 hero-text-title">
         Explore the World With
         </h1>
-        <h1 class="text-center fw-bold" style="color: #FFFFFF;">
+        <h1 class="text-center fw-bold hero-text-title">
         Happy Mango Tours
         </h1>
       </div>
@@ -110,13 +110,12 @@
 
 
     <!-- Footer Section Start -->
-    <footer style="background-color: #02515A;" class="text-white py-5"></footer>
-      <div style="background-color: #02515A;" class="container-fluid">
+      <div class="footer-main text-white py-5 container-fluid">
       <div class="row justify-content-center">
           <!-- First Section - Logo and Contact Info -->
           <div class="col-sm-2">
             <div class="mb-4">
-              <img src="logo.png" alt="Mango Tours Logo" class="mb-3" style="height:48px;">
+              <img src="logo.png" alt="Mango Tours Logo" class="mb-3 logo-img">
               <div>
                 <p class="mb-md-0 text-white">No 38/4 Moragolla Imbulgasdeniya<br>Kegalle Sri Lanka<br>P.O. Box 71000</p>
               </div>
@@ -129,7 +128,7 @@
 
             </div>
           </div>
-          <div class="d-none mx-3 p-0 d-md-block" style="width: 1px; height: 90vph; background-color: white;"></div>
+          <div class="footer-divider d-none mx-3 p-0 d-md-block"></div>
 
           
           <!-- Second Section -->
@@ -143,7 +142,7 @@
             </ul>
           </div>
           
-          <div class="d-none mx-3 p-0 d-md-block" style="width: 1px; height: 90vph; background-color: white;"></div>
+          <div class="footer-divider d-none mx-3 p-0 d-md-block"></div>
 
           <!-- Third Section -->
           <div class="col-sm-2 col-lg mb-4">
@@ -158,7 +157,7 @@
           
           <!-- Fourth Section -->
 
-          <div class="d-none mx-3 p-0 d-md-block" style="width: 1px; height: 90vph; background-color: white;"></div>
+          <div class="footer-divider d-none mx-3 p-0 d-md-block"></div>
 
           
           <div class="col-sm-2 col-lg mb-4">
@@ -171,24 +170,24 @@
               <a href="https://www.youtube.com/@happymangotours" target="_blank" class="text-white me-3"><i class="fa-brands fa-youtube fa-lg"></i></a>
             </div>
           </div>
-                    <div class="d-none mx-3 p-0 d-md-block" style="width: 1px; height: 90vph; background-color: white;"></div>
+                    <div class="footer-divider d-none mx-3 p-0 d-md-block"></div>
         <!-- Fifth Section -->
             <div class="col-sm-2 col-lg mb-4">
             <p class="text-white">GET UPDATES ON NEW TOURS & BLOG NEWS</p>
             <form>
               <div class="mb-3">
-                <input type="text" class="form-control border-0 border-bottom rounded-0" placeholder="YOUR NAME" style="background: transparent; box-shadow: none; color: white;">
+                <input type="text" class="form-control border-0 border-bottom rounded-0 form-input-transparent" placeholder="YOUR NAME">
               </div>
               <div class="mb-4">
-                <input type="email" class="form-control border-0 border-bottom rounded-0" placeholder="YOUR EMAIL" style="background: transparent; box-shadow: none; color: white;">
+                <input type="email" class="form-control border-0 border-bottom rounded-0 form-input-transparent" placeholder="YOUR EMAIL">
               </div>
-                <button type="submit" class="btn" style="background-color: #FF9933; color: white; border-radius: 25px; height: 50px; width: 170px;">Subscribe</button>
+                <button type="submit" class="btn subscribe-button">Subscribe</button>
             </form>
           </div>
         </div>
       </div>
     </footer>
-    <div class="py-3" style="background-color: #02515A;">
+    <div class="copyright-footer py-3">
       <div class="container text-center text-white">
         <p class="mb-0">© 2025 Happy Mango Tours | Web Design & Solutions By DIGITALNEXT</p>
       </div>
